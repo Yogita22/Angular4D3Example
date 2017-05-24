@@ -4,11 +4,68 @@
   <meta charset="utf-8">
   <title>SampleAngularD3App</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 </head>
 <body>
   <app-root>Loading...</app-root>
+
+   <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <div id="chart2"></div>
+    <svg id="chart3" width="250" height="100"></svg>
+
+    <script type="text/javascript">
+
+
+
+  var colorMap = d3.interpolateRgb(
+  d3.rgb('#d6e685'),
+  d3.rgb('#1e6823')
+);
+
+d3.select('#chart2')
+  .selectAll("div")
+  .data([.2, .4, 0, 0, .13, .92])
+  .enter()
+  .append("div")
+  .style("background-color", (d)=> {
+    return d == 0 ? '#eee' : colorMap(d);
+  })
+
+  var data = [{
+  label: "7am",
+  sales: 20
+},{
+  label: "8am",
+  sales: 12
+}, {
+  label: "9am",
+  sales: 8
+}, {
+  label: "10am",
+  sales: 27
+}]
+
+var g = d3.select('#chart3')
+  .selectAll("g")
+  .data(data)
+  .enter()
+  .append('g')
+g.append("circle")
+  .attr('cy', 40)
+  .attr('cx', (d, i)=> (i+1) * 50)
+  .attr('r', (d)=> d.sales)
+g.append("text")
+  .attr('y', 90)
+  .attr('x', (d, i)=> (i+1) * 50)
+  .text((d)=> d.label)
+
+
+
+  </script>
+
+
 </body>
 </html>

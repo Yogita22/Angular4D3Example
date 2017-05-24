@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+#chart4 div {
+    display: inline-block;
+    background: #4285F4;
+    width: 20px;
+    margin-right: 3px;
+}
+
+body {
+    margin: 5%;
+}
+
+#chart2 div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+div {
+    text-align: center;
+    display: inline-block;
+}
+
+circle {
+    fill: #4A988A;
+}
+
+text {
+    font-family: 'Open Sans';
+    text-anchor: middle;
+    color: rgb(34, ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ÑΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓòóΓö£ΓûÆ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼Γò¥Γò¼├┤Γö£ΓûôΓö£Γòú 34, ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ÑΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓòóΓö£ΓûÆ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼Γò¥Γò¼├┤Γö£ΓûôΓö£Γòú 34);
+    font-size: 12px;
+}
